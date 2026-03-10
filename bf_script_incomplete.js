@@ -6,7 +6,7 @@ const loginUrl = "";
 const myUsername = "";
 const myPassword = "";
 const victimUsername = "";
-const inputFile = "";
+const inputFilePath = "";
 
 const candidates = fs.readFileSync(inputFile, "utf-8").split("\n");
 
