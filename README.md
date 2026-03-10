@@ -10,4 +10,3 @@ You can either use:
 - Portswigger-hosted app: <https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block>
 
 - or lunch the **app.exe**
-  test
