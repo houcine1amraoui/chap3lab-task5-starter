@@ -1,14 +1,14 @@
 const fs = require("fs");
 
-// TODO1: Set the missing configuration
+// TODO1:
+// Set the missing configuration
 const loginUrl = "";
 const myUsername = "";
 const myPassword = "";
 const victimUsername = "";
+const inputFile = "";
 
-const passwords = fs
-  .readFileSync("./candidate-passwords.txt", "utf-8")
-  .split("\n");
+const passwords = fs.readFileSync(inputFile, "utf-8").split("\n");
 
 async function login(username, password) {
   try {
@@ -17,13 +17,12 @@ async function login(username, password) {
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify({
-        username,
-        password,
-      }),
+      // TODO2:
+      // Complete the body of the request
+      body: {},
     });
 
-    // TODO2:
+    // TODO3:
     // Detect when the victim login is successful.
     // Print the correct credentials and stop the attack.
   } catch (error) {
@@ -39,10 +38,10 @@ async function bruteForce() {
     if (success) {
       return;
     }
-    // TODO 3:
+    // TODO 4:
     // The application blocks an IP after several failed attempts.
-    // Insert a successfull login attempt
-    // at the correct interval to bypass the protection.
+    // Insert a successfull login attempt at the correct interval
+    // to bypass the protection.
   }
   console.log("Brute force attempt completed. No valid credentials found.");
 }
