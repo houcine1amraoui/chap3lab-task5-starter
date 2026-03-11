@@ -8,7 +8,7 @@ const myPassword = "";
 const victimUsername = "";
 const inputFilePath = "";
 
-const candidates = fs.readFileSync(inputFileinputFilePath, "utf-8").split("\n");
+const candidates = fs.readFileSync(inputFilePath, "utf-8").split("\n");
 
 async function login(username, password) {
   try {
