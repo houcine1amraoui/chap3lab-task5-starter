@@ -4,9 +4,8 @@ The target web application implements a login rate-limiting mechanism intended t
 
 Your task is to modify the provided attack script to bypass the protection and discover the victim's password.
 
-You can either use:
+You can use application by:
 
-- Render-hosted app: <https://auth-lab6.onrender.com>
-- Portswigger-hosted app: <https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block>
-
-- or lunch the provided **app.exe**
+- Launch the provided **app.exe**
+- Using render-hosted app: <https://auth-lab6.onrender.com>
+- Using Portswigger-hosted app: <https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block>
