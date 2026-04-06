@@ -2,7 +2,7 @@ const fs = require("fs");
 
 // TODO1:
 // Set the missing configuration
-const loginUrl = "";
+const targetUrl = "";
 const myUsername = "";
 const myPassword = "";
 const victimUsername = "";
@@ -12,7 +12,7 @@ const candidates = fs.readFileSync(inputFilePath, "utf-8").split("\n");
 
 async function login(username, password) {
   try {
-    const response = await fetch(loginUrl, {
+    const response = await fetch(targetUrl, {
       method: "POST",
       headers: {
         "content-type": "application/json",
